@@ -3,7 +3,10 @@
     flex-direction: column;
     margin: auto;
 
-    button {
+    a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         cursor: pointer;
         max-width: 300px;
         width: 80vw;
@@ -11,11 +14,21 @@
         color: white;
         border: none;
         border-radius: 10px;
+        text-decoration: none;
+        font-size: 1vh;
+
+        img {
+            height: 5vh;
+
+            &#one {
+                opacity: 0;
+            }
+        }
     }
 
     .link {
         margin: 2vh 0;
-        padding: 20px;
+        padding: 10px;
 
         h2 {
             margin: 0;

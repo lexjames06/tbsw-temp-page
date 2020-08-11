@@ -1,25 +1,33 @@
 import React from 'react';
 import data from '../../assets/data/data';
+import spotify from '../../assets/icons/spotify.png'
+import youtube from '../../assets/icons/youtube.png'
+import apple from '../../assets/icons/apple.png'
 
 import './links.styles.scss';
 
 const Links = () => (
-    <form className='links' target='_blank'>
+    <div className='links'>
         {data.map(link => {
             if (link.type === 'button') {
                 return (
-                    <button
-                        key={link.name}
-                        className='link'
-                        type='submit'
-                        formaction={link.link}
-                    >
+                    <a  className='link' key={link.name} href={link.link} target='_blank'>
+                        <img id='one' src={getLinkIcon(link)} alt='' />
                         <h2>{link.name}</h2>
-                    </button>
+                        <img id='two' src={getLinkIcon(link)} alt='' />
+                    </a>
                 );
             }
         })}
-    </form>
+    </div>
 );
+
+function getLinkIcon(link) {
+    return link.name === 'Apple Podcast' ?
+        apple :
+        link.name === 'YouTube' ?
+            youtube :
+            spotify;
+}
 
 export default Links;
