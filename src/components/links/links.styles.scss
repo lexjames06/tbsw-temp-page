@@ -1,0 +1,24 @@
+.links {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    button {
+        cursor: pointer;
+        max-width: 300px;
+        width: 80vw;
+        background-color: #424242;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .link {
+        margin: 2vh 0;
+        padding: 20px;
+
+        h2 {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 300px;
+    width: 80vw;
+    margin: auto;
+    
+    svg {
+        fill: white;
+        height: 10vh;
+        width: 4vh;
+    }
+}
