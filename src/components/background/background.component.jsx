@@ -5,9 +5,11 @@ import clouds from '../../assets/images/clouds.png';
 
 import './background.styles.scss';
 import Body from '../body/body.component';
+import Confetti from '../confetti';
 
 const Background = () => (
     <div className='background'>
+        <Confetti />
         <div className='sky'>
             <img id='clouds' src={clouds} alt='' />
         </div>

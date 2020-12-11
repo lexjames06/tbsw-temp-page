@@ -4,6 +4,7 @@ import Background from './components/background/background.component';
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
       <Background />

@@ -6,6 +6,13 @@ h1 {
     text-shadow: 0.3vh 0.3vh black;
     margin: 0 5vw 50px;
 
+    &.e100 {
+        font-size: 8vh;
+        color: white;
+        animation: change-color 3s infinite;
+        // animation-iteration-count: infinte;
+    }
+
     span {
         padding: 5px 0;
         font-size: 4vh;
@@ -15,4 +22,13 @@ h1 {
         line-height: 0;
         font-size: 7vh;
     }
+}
+
+@keyframes change-color {
+    0% { color: white; }
+    20% { color: yellow; }
+    40% { color: rgb(249, 89, 89); }
+    60% { color: rgb(49, 193, 49); }
+    80% { color: rgb(68, 123, 241); }
+    100% { color: white; }
 }
