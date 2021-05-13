@@ -4,9 +4,6 @@ import './title.styles.scss';
 
 const Title = () => (
     <>
-        <h1 className="e100">
-            1OOth Episode
-        </h1>
         <h1>
             The
             <span>
