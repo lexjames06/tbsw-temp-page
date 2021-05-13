@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../../assets/data/100data';
+import data from '../../assets/data/data';
 import spotify from '../../assets/icons/spotify.png'
 import youtube from '../../assets/icons/youtube.png'
 import apple from '../../assets/icons/apple.png'
